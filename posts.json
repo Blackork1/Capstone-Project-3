@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1728235025233,
+    "headline": "Lets try out, what will happen if i write really long text",
+    "content": "Lets try out, what will happen if i write really long textLets try out, what will happen if i write really long textLets try out, what will happen if i write really long text",
+    "createdAt": "06.10.2024, 19:17:05"
+  },
+  {
+    "id": 1728234997559,
+    "headline": "My name is Sören",
+    "content": "This is the first post for the new Page",
+    "createdAt": "06.10.2024, 19:16:37"
+  },
+  {
+    "id": 1728227113739,
+    "headline": "Homework ",
+    "content": "We need to create a specific work new",
+    "createdAt": "06.10.2024, 17:05:13"
+  },
+  {
+    "id": 1728227029579,
+    "headline": "New Post",
+    "content": "Rry",
+    "createdAt": "06.10.2024, 17:03:49"
+  }
+]

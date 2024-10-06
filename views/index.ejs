@@ -1,0 +1,30 @@
+<%- include('layout') %>
+<div class="container post-container my-4">
+    <h2 class="text-center mb-4">All Posts</h2>
+
+    <% if (posts.length === 0) { %>
+        <div class="alert alert-warning text-center" role="alert">
+            No posts available.
+        </div>
+    <% } else { %>
+        <div class="list-group">
+            <% posts.forEach(post => { %>
+                <div class="list-group-item gradient-white">
+                    <h3 class="mb-1"><%= post.headline %></h3>
+                    <p class="mb-1"><%= post.content %></p>
+                    <p class="d-flex mb-1 justify-content-end"><small>Posted on: <%= post.createdAt %></small></p>
+                    <div class="d-flex justify-content-between">
+                        <a href="/posts/<%= post.id %>/edit" class="btn btn-warning btn-sm">Edit</a>
+                        <form action="/posts/<%= post.id %>?_method=DELETE" method="POST" style="display:inline;">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    <% } %>
+</div>
+
+<%- include("footer") %>
+
+
